@@ -1,13 +1,17 @@
 {
-  "name": "purple-night-theme",
-  "version": "1.0.0",
-  "author": "Breuxi & Chu",
-  "description": "Purple Night Firefox Theme with Twinkling Stars",
+  "name": "purple-night-nova",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Independent Purple Night fork for Firefox Nova, with the original twinkling stars.",
+  "contributors": ["Br3uxi/Breuxi (Purple Night)", "Chu (Purple Twinkle)"],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "web-ext run",
-    "build": "web-ext build",
-    "lint": "web-ext lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "web-ext build --overwrite-dest",
+    "lint": "web-ext lint --warnings-as-errors",
+    "test": "npm run lint"
   },
   "keywords": [
     "firefox",
@@ -16,8 +20,8 @@
     "purple",
     "twinkling"
   ],
-  "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0",
+  "license": "CC-BY-NC-SA-3.0",
   "devDependencies": {
-    "web-ext": "^5.0.0"
+    "web-ext": "10.7.0"
   }
 }
