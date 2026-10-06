@@ -17,11 +17,11 @@ npm run build
 
 ## Why this fork
 
-Kept the stars. Reworked the popup, sidebar, tabs and URL field around quieter purple surfaces. Purple marks focus and selection; pink marks loading and attention.
+Kept the stars and their original `#1D0042` background. Surface colors follow its OKLCH hue (about 295°), with lighter, less saturated purple for panels and fields. Purple marks focus and selection; pink marks loading and attention.
 
 Upstream has two commits, both from August 2020. Its `images/0.png` was actually a four-frame GIF. It's now an APNG with the same pixels, 150 ms per frame and infinite looping, since Firefox themes support APNG animation rather than animated GIF. The opaque image already has its own purple background, so a gradient underneath would be hidden.
 
-Stars stay in the top toolbars. The toolbar has a dark translucent surface; the sidebar stays plain. Manifest v2 still fits a static theme. Firefox 156 is the minimum because that's when `backgrounds_area` arrived; visual testing targets 157+.
+Stars extend behind the sidebar rail and vertical tabs with `backgrounds_area: "window"`. The toolbar is translucent. Separate sidebar panels, such as bookmarks, keep the same solid surface as popups; Firefox makes the `sidebar` color opaque. Manifest v2 still fits a static theme. Firefox 156 is the minimum because that's when `backgrounds_area` arrived; visual testing targets 157+.
 
 [Mozilla's Nova notes](https://blog.mozilla.org/addons/2026/09/29/nova-is-here-what-changes-for-your-firefox-theme/) take precedence where the [MDN theme reference](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/theme) still describes older UI:
 
@@ -30,7 +30,7 @@ Stars stay in the top toolbars. The toolbar has a dark translucent surface; the 
 - Sidebar highlight colors currently have no visible effect in Nova. They're set for UI that still uses them. Sidebar icons follow its text color.
 - `sidebar_border` and `toolbar_bottom_separator` now separate the page from browser surfaces. Firefox 157 also has a sidebar expand-on-hover background bug; Mozilla lists a fix for 158.
 
-Static checks don't establish how Firefox renders the theme. Run the short [manual checklist](MANUAL-TEST.md) before release.
+Run the short [manual checklist](MANUAL-TEST.md) before release.
 
 ## Credits
 
