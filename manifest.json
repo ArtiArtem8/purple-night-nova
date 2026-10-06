@@ -1,7 +1,14 @@
 {
     "manifest_version": 2,
-    "version": "1.0",
-    "name": "Purple Night",
+    "version": "1.1.0",
+    "name": "Purple Night Nova",
+    "description": "Independent fork of Purple Night by Br3uxi/Breuxi, based on Purple Twinkle by Chu. Original stars, updated colors for Firefox Nova.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "purple-night-nova@artiartem8.github.io",
+            "strict_min_version": "156.0"
+        }
+    },
     "theme": {
         "images": {
             "additional_backgrounds": [
@@ -14,24 +21,50 @@
             ],
             "additional_backgrounds_tiling": [
                 "repeat"
-            ]
+            ],
+            "backgrounds_area": "top_toolbars",
+            "color_scheme": "dark",
+            "content_color_scheme": "dark"
         },
         "colors": {
-            "toolbar": "rgba(205, 35, 185, 0.15)",
-            "toolbar_field": "rgba(99, 35, 205, 0.26)",
-            "toolbar_field_text": "rgb(240, 192, 228)",
-            "tab_line": "rgb(205, 35, 185)",
-            "popup": "rgb(108, 0, 114)",
-            "popup_text": "rgb(240, 192, 228)",
-            "tab_loading": "rgb(205, 35, 185)",
-            "tab_background_text": "rgb(150, 96, 239)",
-            "ntp_background": "rgb(25, 0, 66)",
-            "ntp_text": "rgb(255, 250, 250)",
-            "frame": "rgb(8, 11, 33)",
-            "icons": "rgb(210, 128, 255)",
-            "bookmark_text": "rgb(210, 155, 255)",
-            "sidebar": "rgb(108, 0, 114)",
-            "sidebar_text": "rgb(240, 192, 228)"
+            "frame": "#1C1422",
+            "frame_inactive": "#160D1E",
+            "tab_background_text": "#C9B9D5",
+            "tab_selected": "#2A1C37",
+            "tab_text": "#F5EFF8",
+            "tab_line": "#BD93F9",
+            "tab_loading": "#FF79C6",
+            "toolbar": "rgba(22, 13, 30, 0.92)",
+            "toolbar_text": "#F5EFF8",
+            "bookmark_text": "#F5EFF8",
+            "toolbar_top_separator": "#493659",
+            "toolbar_bottom_separator": "#493659",
+            "toolbar_vertical_separator": "#493659",
+            "toolbar_field": "#21172B",
+            "toolbar_field_text": "#F5EFF8",
+            "toolbar_field_border": "#493659",
+            "toolbar_field_focus": "#291D35",
+            "toolbar_field_text_focus": "#F5EFF8",
+            "toolbar_field_border_focus": "#BD93F9",
+            "toolbar_field_highlight": "#BD93F9",
+            "toolbar_field_highlight_text": "#120A19",
+            "button_background_hover": "rgba(189, 147, 249, 0.14)",
+            "button_background_active": "rgba(189, 147, 249, 0.26)",
+            "icons": "#F5EFF8",
+            "icons_attention": "#FF79C6",
+            "popup": "#21172B",
+            "popup_text": "#F3EDF6",
+            "popup_border": "#493659",
+            "popup_highlight": "#352346",
+            "popup_highlight_text": "#FFFFFF",
+            "sidebar": "#21172B",
+            "sidebar_text": "#F5EFF8",
+            "sidebar_border": "#493659",
+            "sidebar_highlight": "#352346",
+            "sidebar_highlight_text": "#FFFFFF",
+            "ntp_background": "#1C1422",
+            "ntp_card_background": "#21172B",
+            "ntp_text": "#F5EFF8"
         }
     }
 }
